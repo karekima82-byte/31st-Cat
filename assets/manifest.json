@@ -1,0 +1,39 @@
+{
+  "title_book_cover": {
+    "file": "title_book_cover.jpg",
+    "status": "user-provided-integrated",
+    "usage": "ユーザー指定のタイトル画面。前景は全体表示、上下の余白は同画像のぼかし背景で補完",
+    "original": "写真1.jpg"
+  },
+  "laptop_front_transparent": {
+    "file": "laptop_front_transparent.png",
+    "status": "generated-not-integrated",
+    "usage": "BG03のPCを参照した正面寄りの本体素材。画面は暗紺の無地",
+    "width": 1536,
+    "height": 1024,
+    "transparent": true
+  },
+  "cat_base_tabby": {
+    "file": "cat_base_tabby.png",
+    "status": "generated-integrated",
+    "usage": "壁紙の通常猫30匹。配置数はcore.jsで管理",
+    "transparent": true,
+    "width": 1122,
+    "height": 1402
+  },
+  "cat31_white": {
+    "file": "cat31_white.png",
+    "status": "generated-integrated",
+    "usage": "31匹目のみ。通常猫から同じ姿勢で白毛へ編集",
+    "transparent": true,
+    "width": 1122,
+    "height": 1402
+  },
+  "minato_room_night": {
+    "file": "minato_room_night.png",
+    "status": "generated-not-approved",
+    "screenCornersNormalized": [[0.327,0.322],[0.692,0.322],[0.693,0.440],[0.327,0.440]],
+    "displayMode": "full-screen-pc-overlay",
+    "note": "画面内文字が小さくなるため、PC画面は独立した拡大レイヤーで表示。遠近投影は未使用。"
+  }
+}

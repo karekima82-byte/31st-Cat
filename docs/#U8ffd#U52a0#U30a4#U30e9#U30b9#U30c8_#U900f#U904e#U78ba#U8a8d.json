@@ -1,0 +1,38 @@
+{
+  "cat_base_tabby.png": {
+    "size": [
+      1122,
+      1402
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "transparentPixels": 759755
+  },
+  "cat31_white.png": {
+    "size": [
+      1122,
+      1402
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "transparentPixels": 759894
+  },
+  "laptop_front_transparent.png": {
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "alphaRange": [
+      0,
+      254
+    ],
+    "transparentPixels": 515858
+  }
+}

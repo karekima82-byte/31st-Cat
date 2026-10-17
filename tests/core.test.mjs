@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {catPositions,restore,parseManuscript} from '../core.js';
+test('30匹の座標は維持され、31匹目の白猫のみ追加される',()=>{const a=catPositions(30),b=catPositions(31);assert.deepEqual(b.slice(0,30),a);assert.equal(b.filter(c=>c.white).length,1);assert.equal(b[30].id,31);assert.equal(new Set(a.map(p=>`${p.x}:${p.y}`)).size,30);});
+test('原稿取り込みで本文と句読点を保持する',()=>{const source=Array.from({length:8},(_,i)=>`## ${i+1} 節名\n\n「……猫？」\n改行。\n\n二段落。`).join('\n\n');const result=parseManuscript(source);assert.equal(result.length,8);assert.equal(result[0].beats[0],'「……猫？」\n改行。');assert.throws(()=>parseManuscript('本文なし'));});
+test('破損した保存と範囲外位置を安全に扱う',()=>{assert.equal(restore('{').completed,false);assert.equal(restore(JSON.stringify({version:1,chapterIndex:99,beatIndex:-5,completed:'true'})).chapterIndex,7);assert.equal(restore(JSON.stringify({version:1,completed:'true'})).completed,false);});
